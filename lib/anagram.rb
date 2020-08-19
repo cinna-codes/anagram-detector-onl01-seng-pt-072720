@@ -14,9 +14,7 @@ class Anagram
     test = words_array.map { |w| w.split("") }
     test = test.map { |l| l.sort }
 
-    # if test.map do |t|
       test.map do |t|
-      #binding.pry
 
         if t == word_sorted
           binding.pry
