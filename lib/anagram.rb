@@ -18,9 +18,9 @@ class Anagram
       test.map do |t|
       #binding.pry
 
-        if binding.pry
+        if #binding.pry
           t == word_sorted
-
+          binding.pry
           matches << words_array[test.find_index(t)]
         end
       end
