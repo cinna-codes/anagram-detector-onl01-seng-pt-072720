@@ -25,10 +25,6 @@ class Anagram
     matches
   end
 
-    # if word_sorted == test_sorted
-    #   return test
-    # else
-    #   return nil
-    # end
+
 
 end
