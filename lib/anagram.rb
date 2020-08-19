@@ -13,7 +13,7 @@ class Anagram
     matches = []
     test = words_array.map { |w| w.split("") }
     test = test.map { |l| l.sort }
-
+binding.pry
       test.map do |t|
 
         if t == word_sorted
