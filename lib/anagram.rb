@@ -6,15 +6,15 @@ class Anagram
     @word = word
   end
 
-  def match(test)
+  def match(words_array)
 
-    test = test.map { |w| w.split("") }
+    test = words_array.map { |w| w.split("") }
     test = test.map { |l| l.sort }
     word_sorted = @word.split("").sort
 
-    if test.each do |t|
+    if test.map do |t|
       t == word_sorted
-      return t
+      puts words_array[test.find_index(t)]
       end
     end
 
