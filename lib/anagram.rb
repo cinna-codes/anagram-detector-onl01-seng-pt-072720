@@ -23,6 +23,8 @@ class Anagram
     #   end
     # matches
 
+    words_array
+
   end
 
 
