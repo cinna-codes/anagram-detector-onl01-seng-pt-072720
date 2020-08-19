@@ -17,12 +17,12 @@ class Anagram
       puts words_array[test.find_index(t)]
       end
     end
+  end
 
     # if word_sorted == test_sorted
     #   return test
     # else
     #   return nil
     # end
-  end
 
 end
