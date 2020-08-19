@@ -9,9 +9,9 @@ class Anagram
   def match(test)
     if @word.sort == test.sort
       return test
+    else
+      nil
     end
-  else
-    nil
   end
 
 
