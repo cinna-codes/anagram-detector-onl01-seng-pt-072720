@@ -9,6 +9,8 @@ class Anagram
 
   def match(words_array)
 
+    words_array.select { |word| word.split("").sort == @word.split("").sort }
+
     # word_sorted = @word.split("").sort
     # matches = []
     # test = words_array.map { |w| w.split("") }
@@ -23,7 +25,6 @@ class Anagram
     #   end
     # matches
 
-    words_array.select { |word| word.split("").sort == @word.split("").sort }
 
   end
 
