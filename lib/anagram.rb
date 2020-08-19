@@ -8,10 +8,10 @@ class Anagram
 
   def match(words_array)
 
-    test = words_array.map { |w| w.split("") }
-    test = test.map { |l| l.sort }
     word_sorted = @word.split("").sort
     matches = []
+    test = words_array.map { |w| w.split("") }
+    test = test.map { |l| l.sort }
 
     if test.map do |t|
       t == word_sorted
