@@ -18,6 +18,7 @@ class Anagram
       matches << words_array[test.find_index(t)]
       end
     end
+    matches
   end
 
     # if word_sorted == test_sorted
