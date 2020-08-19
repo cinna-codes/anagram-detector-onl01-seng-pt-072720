@@ -14,7 +14,7 @@ class Anagram
 
     if test.map do |t|
       t == word_sorted
-      words_array[test.find_index(t)]
+      puts words_array[test.find_index(t)]
       end
     end
   end
