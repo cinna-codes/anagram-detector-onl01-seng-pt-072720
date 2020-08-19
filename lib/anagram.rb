@@ -14,11 +14,11 @@ class Anagram
     test = words_array.map { |w| w.split("") }
     test = test.map { |l| l.sort }
 
-    if test.map do |t|
+    # if test.map do |t|
+      test.map do |t|
+      #binding.pry
 
-      binding.pry
-
-      t == word_sorted
+      if t == word_sorted
       matches << words_array[test.find_index(t)]
       end
     end
