@@ -11,10 +11,11 @@ class Anagram
     test = words_array.map { |w| w.split("") }
     test = test.map { |l| l.sort }
     word_sorted = @word.split("").sort
+    matches = []
 
     if test.map do |t|
       t == word_sorted
-      puts words_array[test.find_index(t)]
+      matches << words_array[test.find_index(t)]
       end
     end
   end
