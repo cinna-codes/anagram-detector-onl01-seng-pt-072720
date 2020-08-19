@@ -19,6 +19,7 @@ class Anagram
       #binding.pry
 
         if t == word_sorted
+          binding.pry
           matches << words_array[test.find_index(t)]
         end
       end
