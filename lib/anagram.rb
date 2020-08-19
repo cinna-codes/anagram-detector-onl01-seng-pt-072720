@@ -16,6 +16,8 @@ class Anagram
     test_sorted = test.split("").sort
     if word_sorted == test_sorted
       return test
+    else
+      return nil
     end
   end
 
