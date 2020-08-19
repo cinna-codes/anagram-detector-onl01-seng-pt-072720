@@ -1,4 +1,5 @@
 # Your code goes here!
+require 'pry'
 class Anagram
   attr_accessor :word
 
@@ -14,6 +15,9 @@ class Anagram
     test = test.map { |l| l.sort }
 
     if test.map do |t|
+
+      binding.pry
+
       t == word_sorted
       matches << words_array[test.find_index(t)]
       end
