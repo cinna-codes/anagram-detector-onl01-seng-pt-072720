@@ -12,6 +12,12 @@ class Anagram
     test = test.map { |l| l.sort }
     word_sorted = @word.split("").sort
 
+    if test.each do |t|
+      t == word_sorted
+      return t
+      end
+    end
+
     # if word_sorted == test_sorted
     #   return test
     # else
