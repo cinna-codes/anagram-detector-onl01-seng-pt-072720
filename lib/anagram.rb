@@ -10,6 +10,8 @@ class Anagram
     if @word.sort == test.sort
       return test
     end
+  else
+    nil
   end
 
 
